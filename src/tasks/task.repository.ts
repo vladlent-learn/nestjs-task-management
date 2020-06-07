@@ -30,8 +30,6 @@ export class TaskRepository extends Repository<TaskEntity> {
       });
     }
 
-    console.log('search >>>>', search);
-
     return await query.getMany();
   }
 }
